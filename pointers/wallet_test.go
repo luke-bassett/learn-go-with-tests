@@ -33,8 +33,8 @@ func assertNoError(t testing.TB, got error) {
 func TestWallet(t *testing.T) {
 	t.Run("Deposit", func(t *testing.T) {
 		wallet := Wallet{}
-		wallet.Deposit(Bitcoin(10))
-		assertBalance(t, wallet, Bitcoin(10))
+		wallet.Deposit(Bitcoin(12))
+		assertBalance(t, wallet, Bitcoin(12))
 	})
 
 	t.Run("Withdraw with funds", func(t *testing.T) {
