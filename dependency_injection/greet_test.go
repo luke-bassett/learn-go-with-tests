@@ -1,10 +1,13 @@
 package main
 
-import "bytes"
+import (
+	"bytes"
+	"testing"
+)
 
-func TestGreet(t *Testing.T) {
+func TestGreet(t *testing.T) {
 	buffer := bytes.Buffer{}
-	Greet(&buffer, "Chris")
+	Greet(&buffer, "Luke")
 
 	got := buffer.String()
 	want := "Hello, Luke"
